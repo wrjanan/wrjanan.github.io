@@ -43,7 +43,7 @@
 								<h1>Hello World. I'm <strong>Janan</strong>.</h1>
 							</header>
 							<p>And it is a lifelong dedication to help others tackle challenging problems in the sphere of <strong>online presence</strong>.</p>
-							<a href="#work" class="button big scrolly">Learn about what I do</a>
+							<a onclick="jumpto('work')" class="button big scrolly">Learn about what I do</a>
 						</div>
 					</div>
 				</article>
@@ -100,23 +100,23 @@
 					<div class="container">
 						<div class="row">
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
+								<article class="box style2 pointer" onclick="visit('https://wrjanan.github.io/diya/')">
 									<a href="https://wrjanan.github.io/diya/" class="image featured"><img src="images/pic00.jpg" alt="" /></a>
-									<h3><a href="#">Diya M.</a></h3>
+									<h3><a>Diya M.</a></h3>
 									<p>Photography Studios.</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
+								<article class="box style2 pointer" onclick="visit('https://heirloam.com')">
 									<a href="https://heirloam.com" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-									<h3><a href="#">Tea Amo</a></h3>
+									<h3><a>Tea Amo</a></h3>
 									<p>TEa-Commerce Shop.</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="https://heirloam.herokuapp.com" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Heirloam</a></h3>
+								<article class="box style2 pointer" onclick="visit('https://heirloam.herokuapp.com')">
+									<a class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a>Heirloam</a></h3>
 									<p>Online Gardening Journal Community.</p>
 								</article>
 							</div>
@@ -124,23 +124,23 @@
 						<div class="row">
 							
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="http://www.aveilxpaemiga.com" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Wedding Site</a></h3>
+								<article class="box style2 pointer" onclick="visit('http://www.aveilxpaemiga.com')">
+									<a class="image featured "><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a >Wedding Site</a></h3>
 									<p>Wedding - Online Space / e-vite.</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Your Company</a></h3>
+									<a  class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a>Your Company</a></h3>
 									<p>What will you like to create?</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-									<h3><a href="#">Random</a></h3>
+									<a class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+									<h3><a>Random</a></h3>
 									<p>Custom Sites.</p>
 								</article>
 							</div>
@@ -148,7 +148,7 @@
 					</div>
 					<footer>
 						<p>If you have any queries or questions?</p>
-						<a href="#contact" class="button big scrolly">Get in touch with me</a>
+						<a onclick="jumpto('contact')" class="button big scrolly">Get in touch with me</a>
 					</footer>
 				</article>
 			</div>
@@ -195,7 +195,7 @@
 						<div class="row">
 							<div class="12u">
 								<hr />
-								<h3>Find me on ...</h3>
+								<h3>And you can find me on ...</h3>
 								<ul class="social">
 									<li><a href="https://www.facebook.com/janantan" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.linkedin.com/in/janantan" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -218,7 +218,7 @@
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>&copy; Simple Page. All rights reserved.</li></li>
+							<li>&copy; All rights reserved.</li></li>
 						</ul>
 					</footer>
 				</article>
@@ -233,5 +233,16 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+	
+			<script type="text/javascript">
+
+				function jumpto(anchor){
+					window.location.href = "#"+anchor;
+				}
+
+				function visit(link){
+					window.location.href  = link;
+				}
+			</script>
 	</body>
 </html>
